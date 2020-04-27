@@ -1,0 +1,16 @@
+[
+{{- range $i, $_ := $.Site.RegularPages }}
+  {{- if $i }}, {{ end }}
+  {
+    "id": {{ .File.TranslationBaseName | jsonify }},
+    "title": {{ .Title | jsonify }},
+    "description": {{ .Description | jsonify }},
+    "category": {{ .File.Dir | replaceRE "compatibility/(.*)/" "$1" | jsonify }},
+    "selector": {{ .Params.selector | jsonify }},
+    "expression": {{ .Params.expression | jsonify }},
+    "deprecated": {{ .Params.deprecated | jsonify }},
+    "removed": {{ .Params.removed | jsonify }},
+    "document": {{ .Params.document | jsonify }}
+  }
+{{- end }}
+]

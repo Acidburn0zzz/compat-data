@@ -1,0 +1,19 @@
+uglyURLs: true
+
+disableKinds:
+  - "home"
+  - "taxonomy"
+  - "taxonomyTerm"
+  - "RSS"
+  - "sitemap"
+  - "robotsTXT"
+  - "404"
+
+outputs:
+  page:
+    - "JSON"
+  section:
+    - "JSON"
+
+minify:
+  minifyOutput: true
