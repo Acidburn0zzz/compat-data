@@ -1,9 +1,11 @@
 ---
-title: "HTML5 Application Cache"
-selector: "html[manifest]"
+title: HTML5 Application Cache
+dom:
+  selectors:
+    - html[manifest]
 deprecated:
-  release: "44"
+  release: 44
 removed:
-  release: "77"
-document: "https://www.fxsitecompat.dev/docs/2020/application-cache-storage-has-been-removed/"
+  release: 77
+document: https://www.fxsitecompat.dev/docs/2020/application-cache-storage-has-been-removed/
 ---
