@@ -9,5 +9,5 @@ dom:
 deprecated:
   release: 71
 removed: false
-document: https://www.fxsitecompat.dev/docs/2020/mathml-mfenced-element-has-been-removed/
+document: https://www.fxsitecompat.dev/docs/2019/various-legacy-mathml-features-have-been-deprecated/
 ---

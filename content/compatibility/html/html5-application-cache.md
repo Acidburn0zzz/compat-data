@@ -5,7 +5,6 @@ dom:
     - html[manifest]
 deprecated:
   release: 44
-removed:
-  release: 77
+removed: false
 document: https://www.fxsitecompat.dev/docs/2020/application-cache-storage-has-been-removed/
 ---
