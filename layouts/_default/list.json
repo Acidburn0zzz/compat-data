@@ -6,7 +6,12 @@
     "title": {{ .Title | jsonify }},
     "description": {{ .Description | jsonify }},
     "category": {{ .File.Dir | replaceRE "compatibility/(.*)/" "$1" | jsonify }},
-    "dom": {{ .Params.dom | jsonify }},
+    {{- with .Params.css }}
+    "css": {{ . | jsonify }},
+    {{- end }}
+    {{- with .Params.dom }}
+    "dom": {{ . | jsonify }},
+    {{- end }}
     "deprecated": {{ .Params.deprecated | jsonify }},
     "removed": {{ .Params.removed | jsonify }},
     "document": {{ .Params.document | jsonify }}
